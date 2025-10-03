@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 text-white flex flex-col items-center min-h-screen pt-10">
+
+  <!-- Page Heading -->
+  <!-- <h1 class="text-3xl font-bold mb-10">Contact Me</h1> -->
+
+  <!-- Main Section (Form + Contact Info) -->
+  <div class="flex flex-col md:flex-row gap-18 w-full max-w-6xl px-6">
+
+    <!-- Contact Form (Left) -->
+    <form class="bg-white text-gray-800 p-8 rounded-xl shadow-sm max-w-sm md:w-1/2">
+      <h2 class="text-center text-3xl font-semibold mb-6 text-gray-900">Contact Me</h2>
+
+      <!-- Name -->
+      <div class="mb-2">
+        <label for="name" class="block font-semibold mb-2">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required
+          class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Mobile -->
+      <div class="mb-2">
+        <label for="mobile" class="block font-semibold mb-2">Mobile No</label>
+        <input type="tel" id="mobile" placeholder="Enter your mobile number" required
+          class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Email -->
+      <div class="mb-2">
+        <label for="email" class="block font-semibold mb-2">Email ID</label>
+        <input type="email" id="email" placeholder="Enter your email" required
+          class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Gender -->
+      <div class="mb-2">
+        <label class="block font-semibold mb-2">Gender</label>
+        <div class="flex gap-6 items-center">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="gender" value="male" class="accent-blue-500"> Male
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="gender" value="female" class="accent-pink-500"> Female
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="gender" value="other" class="accent-green-500"> Other
+          </label>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-4">
+        <label for="message" class="block font-semibold mb-2">Message</label>
+        <textarea id="message" placeholder="Write your message..."
+          class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 h-18 resize-none"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit"
+        class="w-full py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300">
+        Send Message
+      </button>
+    </form>
+
+    <br>
+
+    <!-- Contact Info (Right, slightly upper aligned) -->
+    <div class="flex flex-col justify-start md:justify-center items-center text-center w-full md:w-1/2 mt-6 md:mt-0">
+      <h1 class="text-4xl font-semibold mb-2">Get in Touch</h1>
+      <p class="text-gray-400 mb-8">Feel free to connect with me</p>
+
+      <div class="flex justify-center gap-12 flex-wrap">
+        <!-- Email -->
+        <a href="mailto:kuldeepkp85870@email.com"
+          class="text-[38px] transition-transform hover:scale-110 text-[#EA4335]">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- Phone -->
+        <a href="tel:+917388429582"
+          class="text-[38px] transition-transform hover:scale-110 text-[#34A853]">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
+          class="text-[38px] transition-transform hover:scale-110 text-[#0A66C2]">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/kuldeepsagar542?igsh=dWhyZ2lldmswdjhp" target="_blank"
+          class="text-[38px] transition-transform hover:scale-110 text-[#E4405F]">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Kuldeepsagar542" target="_blank"
+          class="text-[38px] transition-transform hover:scale-110 text-gray-400">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="contact.js"></script>
+</body>
+</html>

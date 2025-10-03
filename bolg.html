@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900">
+    <div class="px-10 md:px-40">
+
+        <!-- navbar -->
+
+        <nav class="flex justify-between items-center h-24">
+
+            <!-- logo -->
+
+            <a href="#" id="logo" class="text-sky-500 text-3xl font-bold border-2 border-sky-500 px-2 py-1 z-10">K.</a>
+
+            <ul class="md:flex space-x-10 hidden">
+                <li>
+                    <a href="index.html" class="text-sky-500">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200">About
+                    </a>
+                </li>
+                <li>
+                    <a href="skills.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200 ">Skills</a>
+                </li>
+                <li>
+                    <a href="Project.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200 ">Projects</a>
+                </li>
+                <li>
+                    <a href="bolg.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200 ">Blog</a>
+                </li>
+                <li>
+                    <a href="hire me.html"
+                        class="text-white bg-sky-500 px-6 py-2 rounded-lg border-2 border-sky-500 hover:bg-sky-600 ">Hire
+                        Me</a>
+                </li>
+            </ul>
+
+            <!-- Ha burger -->
+            <a href="#" id="burger" class="text-white text-2xl md:hidden">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            </a>
+        </nav>
+
+        <!-- Blog Section -->
+
+
+        <section id="blog" class="py-16 px-6 lg:px-20">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl text-white ">My Blog</h2>
+                <p class="text-sky-300 mt-3">Sharing my coding journey, projects, and learning </p>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Blog Card 1 -->
+
+                <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-semibold mb-2 ">My Journey in Web Development</h3>
+                    <p class="text-gray-600 text-lg mb-4">
+                        I started learning HTML, CSS, and JavaScript, then moved to React and Tailwind CSS.
+                        Here’s how I grew step by step...
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium hover:underline">Read More →</a>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-semibold mb-2">Understanding ES6 in Simple Words</h3>
+                    <p class="text-gray-600 text-lg mb-4">
+                        ES6 brought powerful features like let, const, arrow functions, and template literals.
+                        Let’s break them down with examples...
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium hover:underline">Read More →</a>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+                    <h3 class="text-xl font-semibold mb-2">Building My First React Project</h3>
+                    <p class="text-gray-600 text-lg mb-4">
+                        I created a weather app using React and an API. It helped me understand components, props, and
+                        state management.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium hover:underline">Read More →</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- mobile menu -->
+
+
+        <ul id="list"
+            class="flex flex-col justify-center items-center space-y-4 md:hidden bg-sky-500 absolute top-0 bottom-0 left-0 w-60 h-screen p-6 transform -translate-x-full transition-transform duration-300">
+            <li>
+                <a href="index.html" class="text-slate-900 font-semibold">Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="text-white hover:text-slate-900">About</a>
+            </li>
+            <li>
+                <a href="skills.html" class="text-white hover:text-slate-900">Skills</a>
+            </li>
+            <li>
+                <a href="Project.html" class="text-white hover:text-slate-900">Portfolio</a>
+            </li>
+            <li>
+                <a href="bolg.html" class="text-white hover:text-slate-900">Blog</a>
+            </li>
+            <li>
+                <a href="hire me.html"
+                    class="text-white bg-sky-600 px-6 py-2 rounded-lg border-2 border-sky-500 hover:bg-sky-700 transition">
+                    Hire Me
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+
+        const list = document.getElementById('list');
+        const hamburger = document.getElementById('burger');
+        const bars = document.querySelector('.fa-bars');
+        const logo = document.getElementById('logo');
+
+        hamburger.addEventListener('click', () => {
+
+            list.classList.toggle('translate-x-0');
+            bars.classList.toggle('fa-xmark');
+            logo.classList.toggle('text-slate-900');
+            logo.classList.toggle('border-slate-900');
+
+        })
+
+    </script>
+
+</body>
+</html>
