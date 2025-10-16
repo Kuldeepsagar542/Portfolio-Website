@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+ <link rel="stylesheet" href="style.css">
+<body class="bg-slate-900">
+    <div class="px-10 md:px-40">
+
+        <!-- navbar -->
+        <nav class="flex justify-between items-center h-24">
+
+            <!-- logo -->
+            <a href="#" id="logo" class="text-sky-500 text-3xl font-bold border-2 border-sky-500 px-2 py-1 z-10">K.</a>
+
+            <ul class="md:flex space-x-10 hidden">
+                <li>
+                    <a href="index.html" class="text-sky-500">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="skills.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200">
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="Project.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="bolg.html"
+                        class="text-white rounded-sm text-lg hover:text-xl hover:underline hover:decoration-purple-500 hover:decoration-2 underline-offset-8 transition-all duration-200">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="hire me.html"
+                        class="text-white bg-sky-500 px-6 py-2 rounded-lg border-2 border-sky-500 hover:bg-sky-600">
+                        Hire Me
+                    </a>
+                </li>
+            </ul>
+
+            <!-- burger icon (mobile) -->
+            <a href="#" id="burger" class="text-white text-2xl md:hidden">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <!-- skill section-->
+
+        You said:
+
+        <section id="skills" class="max-w-6xl mx-auto py-16 px-6">
+            <h2 class="text-5xl font-bold text-center text-white mb-12">My Skills</h2>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center">
+
+                <!-- HTML -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-orange-100 mb-4 group-hover:bg-white">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                            alt="HTML" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">HTML5</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">Structure of web pages</p>
+                </div>
+
+                <!-- CSS -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-blue-100 mb-4 group-hover:bg-white">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                            alt="CSS" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">CSS3</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">Styling and layouts</p>
+                </div>
+
+                <!-- TailwindCSS -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-sky-100 mb-4 group-hover:bg-white">
+                        <img src="assets/icons8-tailwind-css-48.jpg"
+                            alt="TailwindCSS" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">TailwindCSS</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">Utility-first CSS framework
+                    </p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-yellow-100 mb-4 group-hover:bg-white">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">JavaScript</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">Dynamic client-side scripts
+                    </p>
+                </div>
+
+                <!-- React.js -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-blue-50 mb-4 group-hover:bg-white">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                            alt="React.js" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">React.js</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">Frontend UI library</p>
+                </div>
+
+                <!-- Node.js -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-4 group-hover:bg-white">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">Node.js</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">JavaScript runtime</p>
+                </div>
+
+                <!-- Express.js -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gray-100 mb-4 group-hover:bg-white">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                            alt="Express.js" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">Express.js</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">Backend framework</p>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="group bg-white p-6 w-56 rounded-2xl shadow-md hover:shadow-xl 
+                transition transform hover:-translate-y-2 hover:bg-blue-500 hover:text-white">
+                    <div
+                        class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-green-50 mb-4 group-hover:bg-white">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center">MongoDB</h3>
+                    <p class="text-gray-500 text-center mt-2 text-sm group-hover:text-white">NoSQL database</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- mobile menu -->
+        <ul id="list"
+            class="flex flex-col justify-center items-center space-y-4 md:hidden bg-sky-500 absolute top-0 bottom-0 left-0 w-60 h-screen p-6 transform -translate-x-full transition-transform duration-300">
+            <li>
+                <a href="index.html" class="text-slate-900 font-semibold">Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="text-white hover:text-slate-900">About</a>
+            </li>
+            <li>
+                <a href="skills.html" class="text-white hover:text-slate-900">skills</a>
+            </li>
+            <li>
+                <a href="Project.html" class="text-white hover:text-slate-900">Project</a>
+            </li>
+            <li>
+                <a href="bolg.html" class="text-white hover:text-slate-900">Blog</a>
+            </li>
+            <li>
+                <a href="hire me.html"
+                    class="text-white bg-sky-600 px-6 py-2 rounded-lg border-2 border-sky-500 hover:bg-sky-700 transition">
+                    Hire Me
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="container">
+        <div class="head"><h1>Projects</h1></div>
+        
+    </div>
+
+    <!-- javascript -->
+    <script>
+        const list = document.getElementById('list');
+        const hamburger = document.getElementById('burger');
+        const bars = document.querySelector('.fa-bars');
+        const logo = document.getElementById('logo');
+
+        hamburger.addEventListener('click', () => {
+            list.classList.toggle('translate-x-0');
+            bars.classList.toggle('fa-xmark');
+            logo.classList.toggle('text-slate-900');
+            logo.classList.toggle('border-slate-900');
+        });
+    </script>
+
+</body>
+
+</html>
